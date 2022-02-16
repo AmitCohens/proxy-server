@@ -1,0 +1,51 @@
+Author id : 315147330
+
+Personal details : 
+Name : Amit Cohen
+id : 315147330
+
+Exercise name :  proxy server
+
+Submitted files : 
+1)proxyServer.c : the code.
+2)threadpool.c: the code .
+3)README : this file, which explains the code.
+
+
+Remarks :   
+1) I created a structure with 8 parameters, the name of the protocol, the path, the port,the http verstion,the ip address ,the host and the full path that includes the host.
+
+In addition to the functions I received, I wrote 32 more functions:
+
+1)void create_new_node(char * buffer,int flag);
+2)int parss_IP(char *buffer);
+3)void init_the_ip(Node *pNode, char *buffer);
+4)int convert_binary_to_Dec(char * bin_num);
+5)char * create_binary_number(int offset);
+6)int power(int a, int b);
+7)int check_address_in_fireWall(char* address);
+8)int check_host_in_fireWall(char* host);
+9)int check_protocol(char * http_ver);
+10)char *error_by_code(char * code);
+11)char *get_massage_by_code(int number);
+12)HTTP_request * request_parsing(char * request);
+13)int finding_amount_of_characters(const char * string, char character);
+14)void destroy_HTTP_struct(HTTP_request *HTTP_struct);
+15)int check_alloc(const char *massage);
+16)char *get_error(int number);
+17)int check_HTTP_request(char * request);
+18)int client_side_function(void* socket);
+19)void create_the_path_in_filesystem(HTTP_request * req);
+20)int connect_to_server(HTTP_request * request);
+21)void proxy_main_function(char * filter_path,int max_request,int port,int pool_size);
+22)int server_side_function(HTTP_request *pRequest, int fd);
+23)char *get_mime_type(char *name);
+24)char * get_ip_by_host(char * host);
+25)char * get_host_by_ip(char * ip);
+26)void write_error_to_fd(char * code,int fd);
+27)void stream_the_file_to_client(char *file_path, int client_fd, int position, long total, char *file, HTTP_request *req);
+28)int get_index_of_third_slash(const char * url);
+29)char * build_the_request(HTTP_request* req);
+30)char * allocation_string(int size);
+31)filter_list * build_filter_list(char * path);
+32)void destroy_filter_list();
